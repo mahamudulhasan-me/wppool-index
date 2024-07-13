@@ -608,6 +608,134 @@
           </div>
         </div>
       </section>
+      <section
+        class="container px-[8%] mx-auto py-20 bg-no-repeat bg-right-bottom relative"
+        style="background-image: url('./assets//images/slider-bg.png')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="611"
+          height="533"
+          viewBox="0 0 611 533"
+          fill="none"
+          class="absolute bottom-0 right-20"
+        >
+          <path
+            d="M0.926132 531.53L349.395 0.5H610.044L261.574 531.53H0.926132Z"
+            stroke="#9FA0A2"
+          />
+        </svg>
+        <article class="space-y-5 mb-5">
+          <h1 class="text-5xl">State of USA</h1>
+          <select
+            name="selectors"
+            id="selectors"
+            class="custom-select w-40 text-4xl bg-primary text-white rounded-2xl py-1 px-3 outline-none appearance-none"
+          >
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+
+          <p class="text-xl">
+            Click through the slides or download the report to view natively on
+            your device.
+          </p>
+        </article>
+        <div class="slider-wrapper relative overflow-hidden">
+          <div
+            class="slider flex transition-transform duration-300 gap-5 ease-in-out"
+          >
+            <div class="slide flex-none w-2/5">
+              <img
+                src="./assets/images/reports/report1.png"
+                class="w-full rounded-lg"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="slide flex-none w-2/5">
+              <img
+                src="./assets/images/reports/report2.png"
+                class="w-full rounded-lg"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="slide flex-none w-2/5">
+              <img
+                src="./assets/images/reports/report3.png"
+                class="w-full rounded-lg"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="slide flex-none w-2/5">
+              <img
+                src="./assets/images/reports/report1.png"
+                class="w-full rounded-lg"
+                alt="Slide 3"
+              />
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+        <div class="controls flex justify-between items-center mt-4">
+          <div class="flex gap-5 items-center text-xl">
+            <button
+              id="prev"
+              class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
+              style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2042b6"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                />
+              </svg>
+            </button>
+            <button
+              id="next"
+              class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
+              style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2042b6"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
+            <span>Pages</span>
+            <select
+              name="selectors"
+              id="selectors"
+              class="custom-select2 bg-white w-28 text-primary text-xl rounded-full py-3 px-7 outline-none appearance-none"
+              style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+            >
+              <option value="2023">1 and 2</option>
+              <option value="2022">3 and 4</option>
+            </select>
+            <span>of 37</span>
+          </div>
+          <button class="button">
+            <span class="button-content">Download the 2023 Report</span>
+          </button>
+        </div>
+      </section>
 
       <!-- stories & ideas section  -->
       <section class="container px-[8%] mx-auto my-24">

@@ -76,16 +76,28 @@ body {
   padding: 8px 16px;
 }
 
-/* Custom CSS to style the select arrow */
 .custom-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%2024%2024"%20fill="white"><path%20d="M7%2010l5%205%205-5z"/></svg>')
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>')
     no-repeat right 0.75rem center/1.5rem;
+  padding-right: 2.5rem;
+  background-color: #2042b6;
+  /* Adjust padding to avoid overlapping */
 }
 
-/* Ensuring the arrow is not overlapping with the text */
 .custom-select:focus {
   outline: none;
+}
+
+.custom-select2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stock="#2042b6" fill="#2042b6"><path d="M7 10l5 5 5-5z"/></svg>')
+    no-repeat right 0.75rem center/1.5rem;
+  padding-right: 2.5rem;
+
+  /* Adjust padding to avoid overlapping */
 }
