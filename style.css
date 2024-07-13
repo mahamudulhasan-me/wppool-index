@@ -76,6 +76,16 @@ body {
   padding: 8px 16px;
 }
 
-.accordion-content {
-  transition: max-height 0.3s ease-out, padding 0.3s ease;
+/* Custom CSS to style the select arrow */
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%2024%2024"%20fill="white"><path%20d="M7%2010l5%205%205-5z"/></svg>')
+    no-repeat right 0.75rem center/1.5rem;
+}
+
+/* Ensuring the arrow is not overlapping with the text */
+.custom-select:focus {
+  outline: none;
 }

@@ -37,7 +37,7 @@ const config = {
     responsive: true,
     plugins: {
       legend: {
-        position: "top",
+        position: "bottom",
       },
       tooltip: {
         mode: "index",
@@ -68,3 +68,20 @@ const config = {
 };
 
 const myChart = new Chart(ctx, config);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.querySelector(".dropdown");
+  const button = dropdown.querySelector("button");
+  const links = dropdown.querySelectorAll(".dropdown-content a");
+  const select = dropdown.querySelector("select");
+
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const value = this.getAttribute("data-value");
+      const text = this.textContent;
+      button.textContent = text;
+      select.value = value;
+    });
+  });
+});
