@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>wppool index</title>
+    <title>WPPOOL Index | Mahamudul Hasan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/216d81f7fc.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
 
+    <!-- tailwind.config  -->
     <script>
       tailwind.config = {
         theme: {
@@ -24,6 +25,7 @@
         },
       };
     </script>
+    <!-- tailwind Style  -->
     <style type="text/tailwindcss">
       .company_image-box {
         @apply bg-white px-5 py-7 flex justify-center items-center rounded-md h-[120px];
@@ -36,71 +38,78 @@
       }
     </style>
   </head>
+
+  <!-- body -->
   <body class="bg-[#EDEDED]">
     <main>
       <!-- banner section  -->
       <section
-        class="bg-primary px-[12%] h-screen bg-center bg-no-repeat bg-blend-multiply relative"
+        class="bg-primary min-h-screen h-screen bg-center bg-no-repeat bg-blend-multiply relative"
         style="background-image: url('./assets/images/dotConnect.svg')"
       >
-        <header class="py-8 flex items-center justify-between">
-          <img src="./assets/images/logo.png" alt="wppool logo" />
-          <aside class="flex items-center gap-5 text-white">
-            <button
-              class="border border-white rounded-full p-2 size-12 flex items-center justify-center text-2xl"
-            >
-              <img src="./assets/icons/share.svg" alt="" />
-            </button>
-            <button class="button border">
-              <span class="button-content"> Download the 2024 Report</span>
-            </button>
+        <div class="container mx-auto w-full h-full px-5">
+          <!-- header section  -->
+          <header class="py-8 flex items-center justify-between">
+            <img src="./assets/images/logo.png" alt="wppool logo" />
+            <aside class="flex items-center gap-5 text-white">
+              <button
+                class="border border-white rounded-full p-2 size-12 flex items-center justify-center text-2xl"
+              >
+                <img src="./assets/icons/share.svg" alt="share icon" />
+              </button>
+              <button class="button border">
+                <span class="button-content"> Download the 2024 Report</span>
+              </button>
 
-            <button>
-              <img src="./assets/icons/breadcumbar.svg" alt="menu bar" />
-            </button>
-          </aside>
-        </header>
-        <div
-          class="flex h-4/5 items-center justify-center relative bg-no-repeat bg-center"
-          style="background-image: url('./assets/images/square.svg')"
-        >
-          <div class="text-white text-center">
-            <h1 class="text-8xl">The WPPOOL Index</h1>
-            <p class="text-3xl">
-              Monitor the performance of emerging, publicly traded, financial
-              technology companies
-            </p>
+              <button>
+                <img src="./assets/icons/breadcumbar.svg" alt="menu bar" />
+              </button>
+            </aside>
+          </header>
+          <div
+            class="flex h-4/5 items-center justify-center relative bg-no-repeat bg-center"
+            style="background-image: url('./assets/images/square.svg')"
+          >
+            <div class="text-white text-center -space-y-2">
+              <h1 class="text-[78px]">The WPPOOL Index</h1>
+              <p class="text-2xl">
+                Monitor the performance of emerging, publicly traded, financial
+                technology companies
+              </p>
+            </div>
           </div>
+          <aside class="absolute bottom-20">
+            <ul class="space-y-11">
+              <li>
+                <h1 class="text-4xl text-white">60</h1>
+                <p class="text-gray-200 text-xl">Companies</p>
+              </li>
+              <li>
+                <h1 class="text-5xl text-white">$100B</h1>
+                <p class="text-gray-200 text-xl">Market cap</p>
+              </li>
+              <li>
+                <h1 class="text-5xl text-white">$100B</h1>
+                <p class="text-gray-200 text-xl">Market cap</p>
+              </li>
+              <li>
+                <h1 class="text-5xl text-white">60%</h1>
+                <p class="text-gray-200 text-xl">
+                  LTM avg. revenue growth rate
+                </p>
+              </li>
+            </ul>
+          </aside>
+          <button
+            class="bg-white p-4 rounded-full absolute right-10 bottom-10"
+            style="box-shadow: 0px 24px 24px 0px rgba(0, 0, 0, 0.36)"
+          >
+            <img src="./assets/icons/arrow_downward.svg" alt="arrow down" />
+          </button>
         </div>
-        <aside class="absolute bottom-20">
-          <ul class="space-y-14">
-            <li>
-              <h1 class="text-5xl text-white">60</h1>
-              <p class="text-gray-200 text-xl">Companies</p>
-            </li>
-            <li>
-              <h1 class="text-5xl text-white">$100B</h1>
-              <p class="text-gray-200 text-xl">Market cap</p>
-            </li>
-            <li>
-              <h1 class="text-5xl text-white">$100B</h1>
-              <p class="text-gray-200 text-xl">Market cap</p>
-            </li>
-            <li>
-              <h1 class="text-5xl text-white">60%</h1>
-              <p class="text-gray-200 text-xl">LTM avg. revenue growth rate</p>
-            </li>
-          </ul>
-        </aside>
-        <button
-          class="bg-white p-4 rounded-full absolute right-10 bottom-10"
-          style="box-shadow: 0px 24px 24px 0px rgba(0, 0, 0, 0.36)"
-        >
-          <img src="./assets/icons/arrow_downward.svg" alt="arrow down" />
-        </button>
       </section>
-      <!-- index chart section  -->
 
+      <!-- index chart section  -->
       <section
         class="container mx-auto bg-white my-20 p-5 min-h-screen rounded-md"
       >
@@ -162,10 +171,12 @@
             </button>
           </aside>
         </header>
-        <div class="flex items-start justify-stretch h-full">
-          <aside class="h-full w-80 bg-[#EFF3F6] p-4 rounded-xl space-y-4">
+        <div class="grid grid-cols-12">
+          <aside
+            class="col-span-2 h-full bg-[#EFF3F6] p-4 rounded-xl space-y-4"
+          >
             <button
-              class="bg-primary text-white px-4 py-2 flex items-center justify-between rounded-2xl w-full text-xl"
+              class="bg-primary text-white px-4 py-2 flex items-center justify-between rounded-2xl w-full text-lg"
             >
               The Index
               <svg
@@ -184,7 +195,7 @@
               </svg>
             </button>
             <button
-              class="px-4 py-2 flex items-center justify-between rounded-2xl w-full text-xl text-gray-700 hover:bg-primary hover:text-white transition-all"
+              class="px-4 py-2 flex items-center justify-between rounded-2xl w-full text-lg text-gray-700 hover:bg-primary hover:text-white transition-all"
             >
               The Index Tab One
               <svg
@@ -203,7 +214,7 @@
               </svg>
             </button>
             <button
-              class="px-4 py-2 flex items-center justify-between rounded-2xl w-full text-xl text-gray-700 hover:bg-primary hover:text-white transition-all"
+              class="px-4 py-2 flex items-center justify-between rounded-2xl w-full text-lg text-gray-700 hover:bg-primary hover:text-white transition-all"
             >
               The Index Tab Two
               <svg
@@ -222,7 +233,7 @@
               </svg>
             </button>
             <button
-              class="px-4 py-2 flex items-center justify-between rounded-2xl w-full text-xl text-gray-700 hover:bg-primary hover:text-white transition-all"
+              class="px-4 py-2 flex items-center justify-between rounded-2xl w-full text-lg text-gray-700 hover:bg-primary hover:text-white transition-all"
             >
               The Index Tab Three
               <svg
@@ -241,7 +252,9 @@
               </svg>
             </button>
           </aside>
-          <aside class="w-full bg-white rounded-lg shadow-lg p-6 space-y-6">
+          <aside
+            class="col-span-10 w-full h-fit bg-white rounded-lg shadow-lg p-6 space-y-5"
+          >
             <div class="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -567,15 +580,15 @@
         </div>
       </section>
       <!-- potential future listings -->
-      <section class="container px-[8%] mx-auto my-28">
+      <section class="container px-[8%] mx-auto my-32 space-y-6">
         <h1 class="text-5xl">Potential Future Listings</h1>
-        <p class="text-gray-700">
+        <p class="text-gray-800">
           Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. <br />
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos.
         </p>
-        <div class="grid grid-cols-5 mt-10 gap-5">
+        <div class="grid grid-cols-5 gap-5">
           <div class="company_image-box">
             <img src="./assets/images/groups/Group 220.svg" alt="" />
           </div>
@@ -608,139 +621,143 @@
           </div>
         </div>
       </section>
-      <section
-        class="container px-[8%] mx-auto py-20 bg-no-repeat bg-right-bottom relative"
-        style="background-image: url('./assets//images/slider-bg.png')"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="611"
-          height="533"
-          viewBox="0 0 611 533"
-          fill="none"
-          class="absolute bottom-0 right-20"
-        >
-          <path
-            d="M0.926132 531.53L349.395 0.5H610.044L261.574 531.53H0.926132Z"
-            stroke="#9FA0A2"
-          />
-        </svg>
-        <article class="space-y-5 mb-5">
-          <h1 class="text-5xl">State of USA</h1>
-          <select
-            name="selectors"
-            id="selectors"
-            class="custom-select w-40 text-4xl bg-primary text-white rounded-2xl py-1 px-3 outline-none appearance-none"
-          >
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-          </select>
 
-          <p class="text-xl">
-            Click through the slides or download the report to view natively on
-            your device.
-          </p>
-        </article>
-        <div class="slider-wrapper relative overflow-hidden">
-          <div
-            class="slider flex transition-transform duration-300 gap-5 ease-in-out"
+      <!-- slider section -->
+      <section class="container px-[8%] mx-auto">
+        <div
+          class="pt-10 pb-20 bg-no-repeat bg-right-bottom relative h-full w-full"
+          style="background-image: url('./assets/images/slider-bg.png')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="611"
+            height="533"
+            viewBox="0 0 611 533"
+            fill="none"
+            class="absolute bottom-0 right-20"
           >
-            <div class="slide flex-none w-2/5">
-              <img
-                src="./assets/images/reports/report1.png"
-                class="w-full rounded-lg"
-                alt="Slide 1"
-              />
-            </div>
-            <div class="slide flex-none w-2/5">
-              <img
-                src="./assets/images/reports/report2.png"
-                class="w-full rounded-lg"
-                alt="Slide 2"
-              />
-            </div>
-            <div class="slide flex-none w-2/5">
-              <img
-                src="./assets/images/reports/report3.png"
-                class="w-full rounded-lg"
-                alt="Slide 3"
-              />
-            </div>
-            <div class="slide flex-none w-2/5">
-              <img
-                src="./assets/images/reports/report1.png"
-                class="w-full rounded-lg"
-                alt="Slide 3"
-              />
-            </div>
-            <!-- Add more slides as needed -->
-          </div>
-        </div>
-        <div class="controls flex justify-between items-center mt-4">
-          <div class="flex gap-5 items-center text-xl">
-            <button
-              id="prev"
-              class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
-              style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#2042b6"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-                />
-              </svg>
-            </button>
-            <button
-              id="next"
-              class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
-              style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#2042b6"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </button>
-            <span>Pages</span>
+            <path
+              d="M0.926132 531.53L349.395 0.5H610.044L261.574 531.53H0.926132Z"
+              stroke="#9FA0A2"
+            />
+          </svg>
+          <article class="space-y-5 mb-5">
+            <h1 class="text-5xl">State of USA</h1>
             <select
               name="selectors"
               id="selectors"
-              class="custom-select2 bg-white w-28 text-primary text-xl rounded-full py-3 px-7 outline-none appearance-none"
-              style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+              class="custom-select w-40 text-4xl bg-primary text-white rounded-2xl py-1 px-3 outline-none appearance-none"
             >
-              <option value="2023">1 and 2</option>
-              <option value="2022">3 and 4</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
             </select>
-            <span>of 37</span>
+
+            <p class="text-xl text-gray-800">
+              Click through the slides or download the report to view natively
+              on your device.
+            </p>
+          </article>
+          <div class="slider-wrapper relative overflow-hidden">
+            <div
+              class="slider flex transition-transform duration-300 gap-5 ease-in-out"
+            >
+              <div class="slide flex-none w-2/5">
+                <img
+                  src="./assets/images/reports/report1.png"
+                  class="w-full rounded-lg"
+                  alt="Slide 1"
+                />
+              </div>
+              <div class="slide flex-none w-2/5">
+                <img
+                  src="./assets/images/reports/report2.png"
+                  class="w-full rounded-lg"
+                  alt="Slide 2"
+                />
+              </div>
+              <div class="slide flex-none w-2/5">
+                <img
+                  src="./assets/images/reports/report3.png"
+                  class="w-full rounded-lg"
+                  alt="Slide 3"
+                />
+              </div>
+              <div class="slide flex-none w-2/5">
+                <img
+                  src="./assets/images/reports/report1.png"
+                  class="w-full rounded-lg"
+                  alt="Slide 3"
+                />
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
           </div>
-          <button class="button">
-            <span class="button-content">Download the 2023 Report</span>
-          </button>
+          <div class="controls flex justify-between items-center mt-4">
+            <div class="flex gap-5 items-center text-xl">
+              <button
+                id="prev"
+                class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
+                style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2042b6"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </button>
+              <button
+                id="next"
+                class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
+                style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2042b6"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+              <span>Pages</span>
+              <select
+                name="selectors"
+                id="selectors"
+                class="custom-select2 bg-white w-28 text-primary text-xl rounded-full py-3 px-7 outline-none appearance-none"
+                style="box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.25)"
+              >
+                <option value="2023">1 and 2</option>
+                <option value="2022">3 and 4</option>
+              </select>
+              <span>of 37</span>
+            </div>
+            <button class="button">
+              <span class="button-content">Download the 2023 Report</span>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- stories & ideas section  -->
       <section class="container px-[8%] mx-auto my-24">
         <h1 class="text-5xl">Stories & Ideas</h1>
-        <h4 class="text-gray-700 text-2xl mb-8">The latest news updates</h4>
+        <h4 class="text-gray-700 text-2xl mb-2">The latest news updates</h4>
 
         <div class="grid grid-cols-3 gap-5">
           <!-- Story 1 -->
@@ -859,14 +876,14 @@
       <!-- about section  -->
       <section class="container mx-auto px-[8%] my-20">
         <div
-          class="bg-white rounded-xl grid grid-cols-12 items-center justify-center"
+          class="bg-white rounded-xl grid grid-cols-12 items-center justify-center gap-10"
         >
           <aside class="col-span-7 pl-16">
             <h1 class="text-5xl">About WPPOOL</h1>
             <h2 class="text-gray-600 text-3xl mb-4">
               Investing wppool for over 50 years
             </h2>
-            <p class="text-gray-800 mb-8">
+            <p class="text-gray-800 mb-8 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
               magni quaerat itaque perferendis veritatis dignissimos laborum
               similique harum laudantium rem accusantium consequuntur ipsa vel
@@ -987,18 +1004,18 @@
           <!-- Office locations and social links -->
           <aside class="col-span-4 row-span-4 divide-y divide-gray-400">
             <div class="pb-5">
-              <h6 class="text-2xl font-semibold">Cambridge</h6>
+              <h6 class="text-[20px] font-semibold">Cambridge</h6>
               <p>70728 Yost Burg,</p>
               <p>North Magdaleneview,</p>
               <p>UT 97952-2814</p>
             </div>
             <div class="py-5">
-              <h6 class="text-2xl font-semibold">London</h6>
+              <h6 class="text-[20px] font-semibold">London</h6>
               <p>Suite 292 903 Stehr Streets,</p>
               <p>Langworthtown, SC 94577-9465</p>
             </div>
             <div class="py-5">
-              <h6 class="text-2xl font-semibold">San Francisco</h6>
+              <h6 class="text-[20px] font-semibold">San Francisco</h6>
               <p>19837 Gilberto Lodge,</p>
               <p>Lake Kendallville,</p>
               <p>Colorado - 97392, Bhutan</p>
