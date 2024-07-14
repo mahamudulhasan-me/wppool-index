@@ -254,7 +254,7 @@
           </div>
 
           <div
-            class="flex h-4/5 items-center justify-center relative bg-no-repeat bg-center"
+            class="flex h-4/5 items-center justify-center relative bg-no-repeat bg-center flex-col md:flex-row"
             style="background-image: url('./assets/images/square.svg')"
           >
             <div class="text-white text-center space-y-5">
@@ -264,9 +264,33 @@
                 technology companies
               </p>
             </div>
+            <aside class="absolute md:hidden md:bottom-20 bottom-5 mt-10">
+              <ul class="md:space-y-11 grid grid-cols-2 items-center gap-5">
+                <li class="text-center">
+                  <h1 class="text-4xl text-white">60</h1>
+                  <p class="text-gray-200 text-xl">Companies</p>
+                </li>
+                <li class="text-center">
+                  <h1 class="text-5xl text-white">$100B</h1>
+                  <p class="text-gray-200 text-xl">Market cap</p>
+                </li>
+                <li class="text-center">
+                  <h1 class="text-5xl text-white">$100B</h1>
+                  <p class="text-gray-200 text-xl">Market cap</p>
+                </li>
+                <li class="text-center">
+                  <h1 class="text-5xl text-white">60%</h1>
+                  <p class="text-gray-200 text-xl">
+                    LTM avg. revenue growth rate
+                  </p>
+                </li>
+              </ul>
+            </aside>
           </div>
-          <aside class="absolute md:bottom-20 bottom-4">
-            <ul class="space-y-11">
+          <aside
+            class="md:absolute md:block hidden md:bottom-20 bottom-5 mt-10"
+          >
+            <ul class="md:space-y-11">
               <li>
                 <h1 class="text-4xl text-white">60</h1>
                 <p class="text-gray-200 text-xl">Companies</p>
