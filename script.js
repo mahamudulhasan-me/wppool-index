@@ -69,6 +69,7 @@ const config = {
 
 const myChart = new Chart(ctx, config);
 
+// slider configuration
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 const prevButton = document.getElementById("prev");
@@ -95,6 +96,8 @@ nextButton.addEventListener("click", () => {
 });
 
 showSlide(currentIndex);
+
+//toggle menu operation
 
 const menuButton = document.getElementById("menu-button");
 const menu = document.getElementById("menu");

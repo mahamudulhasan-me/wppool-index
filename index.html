@@ -47,20 +47,19 @@
         class="bg-primary min-h-screen h-screen bg-center bg-no-repeat bg-blend-multiply relative"
         style="background-image: url('./assets/images/dotConnect.svg')"
       >
-        <div class="container mx-auto w-full h-full px-5">
+        <div class="container mx-auto w-full h-full px-5 relative">
           <!-- header section  -->
           <header class="py-8 flex items-center justify-between">
             <img src="./assets/images/logo.png" alt="wppool logo" />
             <aside class="flex items-center gap-5">
               <button
-                class="border border-white rounded-full p-2 size-12 flex items-center justify-center text-2xl"
+                class="hidden border border-white rounded-full p-2 size-12 md:flex items-center justify-center text-2xl"
               >
                 <img src="./assets/icons/share.svg" alt="share icon" />
               </button>
-              <button class="button border">
+              <button class="button border hidden md:block">
                 <span class="button-content">Download the 2024 Report</span>
               </button>
-
               <button id="menu-button">
                 <img src="./assets/icons/breadcumbar.svg" alt="menu bar" />
               </button>
@@ -68,7 +67,7 @@
           </header>
           <div
             id="menu"
-            class="fixed z-50 top-0 right-0 bg-white text-black p-6 shadow-lg m-1 rounded-2xl"
+            class="hidden absolute z-50 top-0 right-0 bg-white text-black p-6 shadow-lg m-1 rounded-2xl"
           >
             <div class="flex items-center gap-4 mb-10 pt-1">
               <button
@@ -131,14 +130,14 @@
             style="background-image: url('./assets/images/square.svg')"
           >
             <div class="text-white text-center -space-y-2">
-              <h1 class="text-[78px]">The WPPOOL Index</h1>
-              <p class="text-2xl">
+              <h1 class="md:text-[78px] text-4xl">The WPPOOL Index</h1>
+              <p class="md:text-2xl text-lg">
                 Monitor the performance of emerging, publicly traded, financial
                 technology companies
               </p>
             </div>
           </div>
-          <aside class="absolute bottom-20">
+          <aside class="absolute md:bottom-20 bottom-4">
             <ul class="space-y-11">
               <li>
                 <h1 class="text-4xl text-white">60</h1>
@@ -171,7 +170,7 @@
 
       <!-- index chart section  -->
       <section
-        class="container mx-auto bg-white my-20 p-5 min-h-screen rounded-md"
+        class="container mx-auto bg-white md:my-20 p-5 md:min-h-screen rounded-md"
       >
         <header
           class="sticky top-0 bg-[#F3F3F3] py-3 px-4 flex items-center justify-between rounded-md mb-8"
@@ -179,7 +178,7 @@
           <img src="./assets/images/logo2.png" alt="wppool logo" />
           <aside class="flex items-center gap-5 text-white">
             <button
-              class="border border-gray-400 rounded-full p-2 size-12 flex items-center justify-center text-2xl"
+              class="border hidden border-gray-400 rounded-full p-2 size-12 md:flex items-center justify-center text-2xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +207,7 @@
               </svg>
             </button>
             <button
-              class="border border-primary rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition-all text-black"
+              class="border hidden md:block border-primary rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition-all text-black"
             >
               Download the 2024 Report
             </button>
@@ -231,9 +230,9 @@
             </button>
           </aside>
         </header>
-        <div class="grid grid-cols-12">
+        <div class="grid md:grid-cols-12">
           <aside
-            class="col-span-2 h-full bg-[#EFF3F6] p-4 rounded-xl space-y-4"
+            class="col-span-2 hidden md:block h-full bg-[#EFF3F6] p-4 rounded-xl space-y-4"
           >
             <button
               class="bg-primary text-white px-4 py-2 flex items-center justify-between rounded-2xl w-full text-lg"
@@ -313,7 +312,7 @@
             </button>
           </aside>
           <aside
-            class="col-span-10 w-full h-fit bg-white rounded-lg shadow-lg p-6 space-y-5"
+            class="col-span-10 w-full h-fit bg-white rounded-lg shadow-lg md:p-6 space-y-5"
           >
             <div class="flex items-center gap-2">
               <svg
@@ -328,9 +327,9 @@
                   stroke="#191618"
                 />
               </svg>
-              <h1 class="text-5xl">The WPPOOL Index</h1>
+              <h1 class="md:text-5xl text-4xl">The WPPOOL Index</h1>
             </div>
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid md:grid-cols-4 grid-cols-2 gap-5">
               <div
                 class="w-full bg-[#F3F3F3] p-2 flex items-center justify-between rounded-md h-50"
               >
@@ -368,7 +367,9 @@
               </div>
             </div>
 
-            <div class="flex justify-between items-center">
+            <div
+              class="md:flex space-y-2 md:space-y-0 justify-between items-center"
+            >
               <aside class="flex justify-center items-center gap-5">
                 <select
                   name="selectors"
@@ -434,17 +435,19 @@
       <!-- table section  -->
       <section class="container mx-auto my-20">
         <div class="bg-white rounded-3xl">
-          <div class="flex items-center justify-between pt-10 px-8">
-            <h2 class="text-5xl">All Companies</h2>
-            <form class="flex items-center border-2 w-1/3 px-3 rounded-lg py-2">
+          <div class="md:flex items-center justify-between pt-10 px-8">
+            <h2 class="md:text-5xl text-4xl">All Companies</h2>
+            <form
+              class="flex items-center border-2 md:w-1/3 mt-2 md:mt-0 px-3 rounded-lg py-2"
+            >
               <img
                 src="./assets/icons/search.svg"
                 alt="search"
-                class="size-8"
+                class="md:size-8"
               />
               <input
                 type="text"
-                class="w-full outline-none ml-2 h-10 placeholder:text-3xl placeholder:text-gray-800 text-3xl"
+                class="w-full outline-none ml-2 md:h-10 md:placeholder:text-3xl placeholder:text-gray-800 md:text-3xl"
                 placeholder="Search Companies"
               />
             </form>
@@ -630,7 +633,9 @@
             </table>
           </div>
         </div>
-        <div class="w-full flex justify-center items-center gap-5">
+        <div
+          class="w-full flex md:flex-row flex-col justify-center items-center gap-5"
+        >
           <button class="button">
             <span class="button-content">Download All Companies Data </span>
           </button>
@@ -640,15 +645,17 @@
         </div>
       </section>
       <!-- potential future listings -->
-      <section class="container px-[8%] mx-auto my-32 space-y-6">
-        <h1 class="text-5xl">Potential Future Listings</h1>
+      <section
+        class="container md:px-[8%] px-2 mx-auto md:my-32 my-12 space-y-6"
+      >
+        <h1 class="md:text-5xl text-4xl">Potential Future Listings</h1>
         <p class="text-gray-800">
           Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. <br />
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
           per inceptos himenaeos.
         </p>
-        <div class="grid grid-cols-5 gap-5">
+        <div class="grid md:grid-cols-5 grid-cols-2 gap-5">
           <div class="company_image-box">
             <img src="./assets/images/groups/Group 220.svg" alt="" />
           </div>
@@ -683,7 +690,7 @@
       </section>
 
       <!-- slider section -->
-      <section class="container px-[8%] mx-auto">
+      <section class="container md:px-[8%] px-2 mx-auto">
         <div
           class="pt-10 pb-20 bg-no-repeat bg-right-bottom relative h-full w-full"
           style="background-image: url('./assets/images/slider-bg.png')"
@@ -702,7 +709,7 @@
             />
           </svg>
           <article class="space-y-5 mb-5">
-            <h1 class="text-5xl">State of USA</h1>
+            <h1 class="md:text-5xl text-4xl">State of USA</h1>
             <select
               name="selectors"
               id="selectors"
@@ -753,8 +760,8 @@
               <!-- Add more slides as needed -->
             </div>
           </div>
-          <div class="controls flex justify-between items-center mt-4">
-            <div class="flex gap-5 items-center text-xl">
+          <div class="controls md:flex justify-between items-center mt-4">
+            <div class="flex gap-5 items-center text-xl mb-3 md:mb-0">
               <button
                 id="prev"
                 class="size-16 flex justify-center items-center bg-white py-2 px-4 rounded-full disabled:bg-gray-300"
@@ -815,11 +822,11 @@
       </section>
 
       <!-- stories & ideas section  -->
-      <section class="container px-[8%] mx-auto my-24">
-        <h1 class="text-5xl">Stories & Ideas</h1>
+      <section class="container md:px-[8%] px-2 mx-auto md:my-24 my-10">
+        <h1 class="md:text-5xl text-4xl">Stories & Ideas</h1>
         <h4 class="text-gray-700 text-2xl mb-2">The latest news updates</h4>
 
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid md:grid-cols-3 gap-5">
           <!-- Story 1 -->
           <div class="mt-24 p-5 bg-white rounded-lg relative h-[250px]">
             <img
@@ -930,17 +937,17 @@
         </div>
       </section>
       <!-- divider -->
-      <div class="container mx-auto px-[8%]">
+      <div class="container mx-auto md:px-[8%] px-2">
         <div class="w-full h-0.5 bg-gray-300"></div>
       </div>
       <!-- about section  -->
-      <section class="container mx-auto px-[8%] my-20">
+      <section class="container mx-auto md:px-[8%] px-2 md:my-20 my-10">
         <div
-          class="bg-white rounded-xl grid grid-cols-12 items-center justify-center gap-10"
+          class="bg-white rounded-xl md:grid flex flex-col md:grid-cols-12 items-center justify-center gap-10"
         >
-          <aside class="col-span-7 pl-16">
-            <h1 class="text-5xl">About WPPOOL</h1>
-            <h2 class="text-gray-600 text-3xl mb-4">
+          <aside class="col-span-7 md:pl-16 p-4">
+            <h1 class="md:text-5xl text-4xl">About WPPOOL</h1>
+            <h2 class="text-gray-600 md:text-3xl text-2xl mb-4">
               Investing wppool for over 50 years
             </h2>
             <p class="text-gray-800 mb-8 text-justify">
@@ -961,18 +968,24 @@
             </button>
           </aside>
           <aside class="col-span-5">
-            <img src="./assets/images/banner-img.svg" alt="" class="w-full" />
+            <img
+              src="./assets/images/banner-img.svg"
+              alt="wppool banner image"
+              class="w-full"
+            />
           </aside>
         </div>
       </section>
       <!-- divider  -->
-      <div class="container mx-auto px-[8%]">
+      <div class="container mx-auto md:px-[8%] px-2">
         <div class="w-full h-0.5 bg-gray-300"></div>
       </div>
       <!-- wppool portfoliio companies section  -->
-      <section class="container mx-auto px-[8%] my-20">
-        <h1 class="text-5xl">Selected WPPOOL Portfolio Companies</h1>
-        <div class="grid grid-cols-5 gap-5 mt-12">
+      <section class="container mx-auto md:px-[8%] px-2 md:my-20 my-10">
+        <h1 class="md:text-5xl text-4xl">
+          Selected WPPOOL Portfolio Companies
+        </h1>
+        <div class="grid md:grid-cols-5 grid-cols-2 gap-5 mt-12">
           <div class="company_image-box">
             <img src="./assets/images/companies/company1.png" alt="" />
           </div>
@@ -1040,11 +1053,11 @@
       <!-- footer section  -->
       <footer class="py-20 bg-[#E6E6E6]">
         <div
-          class="container px-[8%] mx-auto grid grid-cols-12 grid-rows-4 gap-x-10"
+          class="container md:px-[8%] px-2 mx-auto grid md:grid-cols-12 md:grid-rows-4 gap-x-10 space-y-5 md:space-y-0"
         >
           <!-- Main message -->
           <article class="row-span-3 col-span-5">
-            <h3 class="text-4xl">
+            <h3 class="md:text-4xl text-2xl">
               Experience remarkable WordPress products with a new level of
               power, beauty, and human-centered designs.
             </h3>
