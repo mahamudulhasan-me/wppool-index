@@ -110,3 +110,29 @@ menuButton.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   menu.classList.add("hidden");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header1 = document.getElementById("header-1");
+  const header2 = document.getElementById("header-2");
+  const header1Height = header1.offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > header1Height) {
+      header2.classList.remove("hidden");
+    } else {
+      header2.classList.add("hidden");
+    }
+  });
+});
+
+const menuButton2 = document.getElementById("menu-button2");
+const menu2 = document.getElementById("menu2");
+const closeMenu2 = document.getElementById("close-menu2");
+
+menuButton2.addEventListener("click", () => {
+  menu2.classList.toggle("hidden");
+});
+
+closeMenu2.addEventListener("click", () => {
+  menu2.classList.add("hidden");
+});

@@ -48,6 +48,127 @@
   <body class="bg-[#EDEDED]">
     <!-- main section start  -->
     <main>
+      <!-- sticky header  -->
+
+      <header
+        id="header-2"
+        class="sticky container mx-auto z-50 top-2 bg-[#F3F3F3] py-3 px-4 flex items-center justify-between rounded-md"
+      >
+        <img src="./assets/images/logo2.png" alt="wppool logo" />
+        <aside class="flex items-center gap-5 text-white">
+          <button
+            class="border hidden border-[#AFCD80] rounded-full p-2 size-12 md:flex items-center justify-center text-2xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <mask
+                id="mask0_1_1476"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="14"
+                height="14"
+              >
+                <rect width="14" height="14" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_1_1476)">
+                <path
+                  d="M10.5 12.8334C10.0139 12.8334 9.60069 12.6633 9.26042 12.323C8.92014 11.9827 8.75 11.5695 8.75 11.0834C8.75 11.0154 8.75486 10.9449 8.76458 10.872C8.77431 10.799 8.78889 10.7334 8.80833 10.6751L4.69583 8.28342C4.53056 8.42925 4.34583 8.54348 4.14167 8.62612C3.9375 8.70876 3.72361 8.75008 3.5 8.75008C3.01389 8.75008 2.60069 8.57994 2.26042 8.23967C1.92014 7.89939 1.75 7.48619 1.75 7.00008C1.75 6.51397 1.92014 6.10078 2.26042 5.7605C2.60069 5.42022 3.01389 5.25008 3.5 5.25008C3.72361 5.25008 3.9375 5.2914 4.14167 5.37404C4.34583 5.45668 4.53056 5.57092 4.69583 5.71675L8.80833 3.32508C8.78889 3.26675 8.77431 3.20112 8.76458 3.12821C8.75486 3.05529 8.75 2.9848 8.75 2.91675C8.75 2.43064 8.92014 2.01744 9.26042 1.67716C9.60069 1.33689 10.0139 1.16675 10.5 1.16675C10.9861 1.16675 11.3993 1.33689 11.7396 1.67716C12.0799 2.01744 12.25 2.43064 12.25 2.91675C12.25 3.40286 12.0799 3.81605 11.7396 4.15633C11.3993 4.49661 10.9861 4.66675 10.5 4.66675C10.2764 4.66675 10.0625 4.62543 9.85833 4.54279C9.65417 4.46015 9.46944 4.34592 9.30417 4.20008L5.19167 6.59175C5.21111 6.65008 5.22569 6.71571 5.23542 6.78862C5.24514 6.86154 5.25 6.93203 5.25 7.00008C5.25 7.06814 5.24514 7.13862 5.23542 7.21154C5.22569 7.28446 5.21111 7.35008 5.19167 7.40841L9.30417 9.80008C9.46944 9.65425 9.65417 9.54001 9.85833 9.45737C10.0625 9.37473 10.2764 9.33342 10.5 9.33342C10.9861 9.33342 11.3993 9.50355 11.7396 9.84383C12.0799 10.1841 12.25 10.5973 12.25 11.0834C12.25 11.5695 12.0799 11.9827 11.7396 12.323C11.3993 12.6633 10.9861 12.8334 10.5 12.8334Z"
+                  fill="#191618"
+                />
+              </g>
+            </svg>
+          </button>
+          <button
+            class="border hidden md:block border-primary rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition-all text-black"
+          >
+            Download the 2024 Report
+          </button>
+          <button id="menu-button2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              class="size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </aside>
+        <!-- menu section -->
+        <div
+          id="menu2"
+          class="hidden absolute z-50 top-0 right-0 bg-white text-black p-6 shadow-lg mr-1 rounded-2xl"
+        >
+          <div class="flex items-center gap-4 mb-10 pt-1">
+            <button
+              class="border bg-[#AFCD80] border-white rounded-full p-2 size-12 flex items-center justify-center text-2xl"
+            >
+              <img src="./assets/icons/share.svg" alt="share icon" />
+            </button>
+            <button class="button border">
+              <span class="button-content">Download the 2024 Report</span>
+            </button>
+            <button id="close-menu2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <rect
+                  x="0.928909"
+                  y="14.364"
+                  width="19"
+                  height="1"
+                  transform="rotate(-45 0.928909 14.364)"
+                  fill="white"
+                  stroke="#191618"
+                />
+                <rect
+                  x="1.63684"
+                  y="0.928298"
+                  width="19"
+                  height="1"
+                  transform="rotate(45 1.63684 0.928298)"
+                  fill="white"
+                  stroke="#191618"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="px-2 text-lg space-y-6">
+            <li><a href="#">The WPPOOL Index</a></li>
+            <li><a href="#">All Companies</a></li>
+            <li>
+              <a href="#">Potential Future Listings</a>
+            </li>
+            <li><a href="#">State of USA</a></li>
+            <li><a href="#">Stories & Ideas</a></li>
+            <li><a href="#">About WPPOOL</a></li>
+            <li>
+              <a href="#">WPPOOL Portfolio Companies</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 text-blue-600">Visit WPPOOL</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
       <!-- banner section  -->
       <section
         class="bg-primary min-h-screen h-screen bg-center bg-no-repeat bg-blend-multiply relative"
@@ -55,7 +176,7 @@
       >
         <div class="container mx-auto w-full h-full px-5 relative">
           <!-- header section  -->
-          <header class="py-8 flex items-center justify-between">
+          <header id="header-1" class="py-8 flex items-center justify-between">
             <img src="./assets/images/logo.png" alt="wppool logo" />
             <aside class="flex items-center gap-5">
               <button
@@ -71,6 +192,7 @@
               </button>
             </aside>
           </header>
+
           <div
             id="menu"
             class="hidden absolute z-50 top-0 right-0 bg-white text-black p-6 shadow-lg m-1 rounded-2xl"
@@ -178,64 +300,6 @@
       <section
         class="container mx-auto bg-white md:my-20 p-5 md:min-h-screen rounded-md"
       >
-        <header
-          class="sticky top-0 bg-[#F3F3F3] py-3 px-4 flex items-center justify-between rounded-md mb-8"
-        >
-          <img src="./assets/images/logo2.png" alt="wppool logo" />
-          <aside class="flex items-center gap-5 text-white">
-            <button
-              class="border hidden border-gray-400 rounded-full p-2 size-12 md:flex items-center justify-center text-2xl"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-              >
-                <mask
-                  id="mask0_1_1152"
-                  style="mask-type: alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="14"
-                  height="14"
-                >
-                  <rect width="14" height="14" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_1_1152)">
-                  <path
-                    d="M10.5 12.8334C10.0139 12.8334 9.60069 12.6633 9.26042 12.323C8.92014 11.9827 8.75 11.5695 8.75 11.0834C8.75 11.0154 8.75486 10.9449 8.76458 10.872C8.77431 10.799 8.78889 10.7334 8.80833 10.6751L4.69583 8.28342C4.53056 8.42925 4.34583 8.54348 4.14167 8.62612C3.9375 8.70876 3.72361 8.75008 3.5 8.75008C3.01389 8.75008 2.60069 8.57994 2.26042 8.23967C1.92014 7.89939 1.75 7.48619 1.75 7.00008C1.75 6.51397 1.92014 6.10078 2.26042 5.7605C2.60069 5.42022 3.01389 5.25008 3.5 5.25008C3.72361 5.25008 3.9375 5.2914 4.14167 5.37404C4.34583 5.45668 4.53056 5.57092 4.69583 5.71675L8.80833 3.32508C8.78889 3.26675 8.77431 3.20112 8.76458 3.12821C8.75486 3.05529 8.75 2.9848 8.75 2.91675C8.75 2.43064 8.92014 2.01744 9.26042 1.67716C9.60069 1.33689 10.0139 1.16675 10.5 1.16675C10.9861 1.16675 11.3993 1.33689 11.7396 1.67716C12.0799 2.01744 12.25 2.43064 12.25 2.91675C12.25 3.40286 12.0799 3.81605 11.7396 4.15633C11.3993 4.49661 10.9861 4.66675 10.5 4.66675C10.2764 4.66675 10.0625 4.62543 9.85833 4.54279C9.65417 4.46015 9.46944 4.34592 9.30417 4.20008L5.19167 6.59175C5.21111 6.65008 5.22569 6.71571 5.23542 6.78862C5.24514 6.86154 5.25 6.93203 5.25 7.00008C5.25 7.06814 5.24514 7.13862 5.23542 7.21154C5.22569 7.28446 5.21111 7.35008 5.19167 7.40841L9.30417 9.80008C9.46944 9.65425 9.65417 9.54001 9.85833 9.45737C10.0625 9.37473 10.2764 9.33342 10.5 9.33342C10.9861 9.33342 11.3993 9.50355 11.7396 9.84383C12.0799 10.1841 12.25 10.5973 12.25 11.0834C12.25 11.5695 12.0799 11.9827 11.7396 12.323C11.3993 12.6633 10.9861 12.8334 10.5 12.8334Z"
-                    fill="#191618"
-                  />
-                </g>
-              </svg>
-            </button>
-            <button
-              class="border hidden md:block border-primary rounded-3xl px-4 py-2 hover:bg-primary hover:text-white transition-all text-black"
-            >
-              Download the 2024 Report
-            </button>
-
-            <button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#000000"
-                class="size-8"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </button>
-          </aside>
-        </header>
         <div class="grid md:grid-cols-12">
           <aside
             class="col-span-2 hidden md:block h-full bg-[#EFF3F6] p-4 rounded-xl space-y-4"
