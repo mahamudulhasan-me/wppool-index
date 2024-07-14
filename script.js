@@ -99,17 +99,29 @@ showSlide(currentIndex);
 
 //toggle menu operation
 
+// Function to toggle menu visibility
+function toggleMenu(menuButton, menu, closeMenu) {
+  menuButton.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    menu.classList.add("hidden");
+  });
+}
+
+// Apply the function to each menu set
 const menuButton = document.getElementById("menu-button");
 const menu = document.getElementById("menu");
 const closeMenu = document.getElementById("close-menu");
+toggleMenu(menuButton, menu, closeMenu);
 
-menuButton.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-});
+const menuButton2 = document.getElementById("menu-button2");
+const menu2 = document.getElementById("menu2");
+const closeMenu2 = document.getElementById("close-menu2");
+toggleMenu(menuButton2, menu2, closeMenu2);
 
-closeMenu.addEventListener("click", () => {
-  menu.classList.add("hidden");
-});
+// show sticky header
 
 document.addEventListener("DOMContentLoaded", () => {
   const header1 = document.getElementById("header-1");
@@ -123,16 +135,4 @@ document.addEventListener("DOMContentLoaded", () => {
       header2.classList.add("hidden");
     }
   });
-});
-
-const menuButton2 = document.getElementById("menu-button2");
-const menu2 = document.getElementById("menu2");
-const closeMenu2 = document.getElementById("close-menu2");
-
-menuButton2.addEventListener("click", () => {
-  menu2.classList.toggle("hidden");
-});
-
-closeMenu2.addEventListener("click", () => {
-  menu2.classList.add("hidden");
 });
