@@ -95,3 +95,15 @@ nextButton.addEventListener("click", () => {
 });
 
 showSlide(currentIndex);
+
+const menuButton = document.getElementById("menu-button");
+const menu = document.getElementById("menu");
+const closeMenu = document.getElementById("close-menu");
+
+menuButton.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+
+closeMenu.addEventListener("click", () => {
+  menu.classList.add("hidden");
+});
